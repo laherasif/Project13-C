@@ -1,0 +1,15 @@
+projects:
+  Loly-api:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/API.ts
+        docsFilePath: src/graphql
+        region: us-east-1
+        apiId: jtj4zjgjhjhbzinn5u77xgi6tq
+        maxDepth: 2

@@ -1,0 +1,28 @@
+type Lollies {
+  id: ID!
+  sender: String!
+  reciver: String!
+  msg: String!
+  color1: String!
+  color2: String!
+  color3: String!
+}
+
+input TodoInput {
+  id: ID!
+  sender: String!
+  reciver: String!
+  msg: String!
+  color1: String!
+  color2: String!
+  color3: String!
+}
+
+type Query {
+  getLollies: [Lollies]
+}
+
+type Mutation {
+  addLoly(loly: TodoInput!): Lollies
+ 
+}
